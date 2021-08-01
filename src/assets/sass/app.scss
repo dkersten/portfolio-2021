@@ -1,5 +1,5 @@
-// Normalise
-@import "./vendor/normalise";
+// Resize
+@import "./vendor/css-reset";
 
 // Base
 @import "./base/variables";
@@ -7,5 +7,4 @@
 @import "./base/typography";
 
 // Components
-@import "./components/nav";
 @import "./components/main-content";
