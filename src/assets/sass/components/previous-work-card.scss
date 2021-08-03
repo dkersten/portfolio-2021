@@ -1,0 +1,31 @@
+.flickity-slider {
+}
+
+.carousel-cell {
+  //   background: #f7f7f7;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+  max-width: 325px;
+
+  img {
+    width: 325px;
+    height: 244px;
+  }
+
+  h3 {
+    max-width: 325px;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+      color: $color-font-primary;
+    }
+  }
+
+  p {
+    max-width: 325px;
+    width: 100%;
+    color: $color-font-secondary;
+  }
+}
