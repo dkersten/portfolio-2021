@@ -17,7 +17,7 @@
  * Base font family
 */
 
-$base-font-family: Arial, sans-serif !default;
+$base-font-family: "Noto Sans SC", sans-serif;
 
 /*
  * Base font sizes
@@ -57,5 +57,5 @@ $base-line-height: 1.5 !default;
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
 
-$color-font-primary: #1d1d1f;
-$color-font-secondary: #46464b;
+$color-font-primary: #202d34;
+$color-font-secondary: rgba(26, 27, 28, 0.6);

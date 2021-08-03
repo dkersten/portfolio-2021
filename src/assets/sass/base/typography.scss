@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap");
 
 * {
-  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Noto Sans SC", sans-serif !important;
 }
 
 /*------------------*
@@ -48,4 +48,8 @@ h5 {
 
 h6 {
   font-size: $h6-size;
+}
+
+p {
+  line-height: 1.5;
 }

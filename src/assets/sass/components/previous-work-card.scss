@@ -1,12 +1,38 @@
 .flickity-slider {
 }
 
+.flickity-prev-next-button {
+  background: red;
+  opacity: 1;
+  color: $color-font-primary;
+
+  &.previous {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: -38px;
+    right: 68px;
+    left: auto;
+  }
+
+  &.next {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: -38px;
+    right: 28px;
+    left: auto;
+  }
+}
+
 .carousel-cell {
   //   background: #f7f7f7;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
   max-width: 325px;
+
+  &:nth-of-type(1) {
+    padding-left: 0;
+  }
 
   img {
     width: 325px;
