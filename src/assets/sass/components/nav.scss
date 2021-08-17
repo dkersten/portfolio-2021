@@ -19,32 +19,110 @@ nav .page-width {
       line-height: 1;
       text-decoration: none;
       color: $color-font-primary;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 0%;
+        transition: all 0.3s ease-in-out;
+        left: 50%;
+      }
+
+      &:hover::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: $color-blue-primary;
+        height: 3px;
+        width: 50%;
+      }
+
+      &::after {
+        content: "";
+        width: 0%;
+        transition: all 0.3s ease-in-out;
+        left: 50%;
+      }
+
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        background: $color-blue-primary;
+        height: 3px;
+        width: 50%;
+      }
     }
   }
 
-  .logo {
-    width: 75px;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff !important;
-    border-radius: $border-radius-md;
-    color: $color-white;
-    font-weight: 700;
-    font-size: $h4-size;
+  .logo-container {
     position: relative;
-    z-index: 3;
+    width: 95px;
+    height: 95px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background-color: #fff;
+      font-weight: 700;
+      font-size: $h4-size;
+      border-radius: $border-radius-md;
+      z-index: 5;
+      animation: animateTextColor 10s ease infinite;
+    }
 
     .logo-bg {
       position: absolute;
-      content: "";
-      width: 95px;
-      height: 95px;
-      left: -10px;
-      top: -10px;
-      background: red;
-      z-index: -1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: $border-radius-md;
+      z-index: 2;
+      background: linear-gradient(
+        90deg,
+        $color-green-primary,
+        $color-blue-primary
+      );
+      background-size: 200% 200%;
+      animation: animateGlow 10s ease infinite;
+      transform: scale(0.75);
+      -webkit-filter: blur(50px);
+      -moz-filter: blur(50px);
+      -ms-filter: blur(50px);
+      filter: blur(50px);
     }
+  }
+}
+
+@keyframes animateTextColor {
+  0% {
+    color: $color-green-primary;
+  }
+  50% {
+    color: $color-blue-primary;
+  }
+  100% {
+    color: $color-green-primary;
+  }
+}
+
+@keyframes animateBackgroundGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
