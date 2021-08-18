@@ -2,7 +2,6 @@
 }
 
 .carousel-cell {
-  //   background: #f7f7f7;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   width: 100%;
@@ -15,6 +14,7 @@
   img {
     width: 325px;
     height: 244px;
+    box-shadow: $box-shadow-md;
   }
 
   h3 {

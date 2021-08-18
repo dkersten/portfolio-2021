@@ -1,0 +1,28 @@
+.banner {
+  padding-top: $vertical-spacing-xl;
+  padding-bottom: $vertical-spacing-xl;
+  text-align: center;
+
+  h1 {
+    margin-top: 0;
+    font-weight: 700;
+    color: $color-font-primary;
+    font-size: $font-size-xl;
+    margin-bottom: $vertical-spacing-xs;
+
+    span {
+      display: block;
+      font-size: $font-size-md;
+      margin-top: $vertical-spacing-xs;
+      font-size: $font-size-xl;
+    }
+  }
+
+  p {
+    font-size: $font-size-xs;
+    max-width: 600px;
+    margin: auto;
+    color: $color-font-secondary;
+    line-height: 1.7;
+  }
+}
