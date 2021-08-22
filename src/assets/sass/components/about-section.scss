@@ -1,0 +1,35 @@
+section.about {
+  padding-bottom: $vertical-spacing-xl;
+
+  .columns-container {
+    display: flex;
+    align-items: center;
+
+    .left,
+    .right {
+      flex-basis: 50%;
+    }
+
+    .left {
+      p {
+        color: $color-font-secondary;
+        font-size: $font-size-xs;
+        line-height: 1.7;
+
+        &:first-of-type {
+          margin-bottom: $vertical-spacing-xs;
+        }
+      }
+    }
+
+    .right {
+      img {
+        max-width: 375px;
+        width: 90%;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
