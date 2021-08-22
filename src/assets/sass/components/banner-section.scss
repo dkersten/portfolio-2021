@@ -9,13 +9,7 @@
     color: $color-font-primary;
     font-size: $font-size-xl;
     margin-bottom: $vertical-spacing-xs;
-
-    span {
-      display: block;
-      font-size: $font-size-md;
-      margin-top: $vertical-spacing-xs;
-      font-size: $font-size-xl;
-    }
+    line-height: 1.7;
   }
 
   p {

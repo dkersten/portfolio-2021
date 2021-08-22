@@ -10,6 +10,14 @@ section.about {
       flex-basis: 50%;
     }
 
+    @media only screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+
+      .right {
+        margin-bottom: $vertical-spacing-sm;
+      }
+    }
+
     .left {
       p {
         color: $color-font-secondary;
@@ -20,6 +28,10 @@ section.about {
           margin-bottom: $vertical-spacing-xs;
         }
       }
+
+      @media only screen and (min-width: 768px) and (max-width: 999px) {
+        padding-right: 1rem;
+      }
     }
 
     .right {
@@ -29,6 +41,10 @@ section.about {
         border-radius: 50%;
         display: block;
         margin: auto;
+
+        @media only screen and (max-width: 999px) {
+          max-width: 325px;
+        }
       }
     }
   }
