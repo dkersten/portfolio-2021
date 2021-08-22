@@ -1,0 +1,40 @@
+section.experience {
+  margin-bottom: $vertical-spacing-xl;
+
+  h2 {
+    color: $color-font-primary;
+    margin-bottom: $vertical-spacing-xs;
+    font-weight: 700;
+  }
+
+  .columns-container {
+    align-items: flex-start;
+
+    @media only screen and (min-width: 768px) {
+      .left {
+        padding-right: 2rem;
+      }
+
+      .right {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .right {
+    p {
+      margin-bottom: $vertical-spacing-xs;
+    }
+
+    ul {
+      column-count: 2;
+    }
+  }
+
+  p,
+  li {
+    color: $color-font-secondary;
+    font-size: $font-size-xs;
+    line-height: 1.7;
+  }
+}

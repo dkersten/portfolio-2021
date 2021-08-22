@@ -17,3 +17,26 @@
 p {
   line-height: 1.6;
 }
+
+.columns-container {
+  display: flex;
+  align-items: center;
+
+  .left,
+  .right {
+    flex-basis: 50%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+
+    .left,
+    .right {
+      flex-basis: 100%;
+    }
+
+    .left {
+      margin-bottom: $vertical-spacing-sm;
+    }
+  }
+}

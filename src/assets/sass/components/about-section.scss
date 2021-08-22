@@ -2,19 +2,15 @@ section.about {
   padding-bottom: $vertical-spacing-xl;
 
   .columns-container {
-    display: flex;
-    align-items: center;
-
-    .left,
-    .right {
-      flex-basis: 50%;
-    }
-
     @media only screen and (max-width: 767px) {
       flex-direction: column-reverse;
 
       .right {
         margin-bottom: $vertical-spacing-sm;
+      }
+
+      .left {
+        margin-bottom: 0;
       }
     }
 
