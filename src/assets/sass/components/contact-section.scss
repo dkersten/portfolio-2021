@@ -30,6 +30,13 @@ footer.contact {
       max-width: 40px;
       margin-left: 0.75rem;
       margin-right: 0.75rem;
+      margin-bottom: 0.75rem;
+
+      @media only screen and (max-width: 399px) {
+        max-width: 32px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
     }
   }
 }
