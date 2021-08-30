@@ -3,6 +3,12 @@
   padding-bottom: $vertical-spacing-xl;
   text-align: center;
 
+  .banner-cta {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+
   h1 {
     margin-top: 0;
     font-weight: 700;
@@ -18,5 +24,93 @@
     margin: auto;
     color: $color-font-secondary;
     line-height: 1.7;
+  }
+
+  .icon1 {
+    width: 135px;
+    height: auto;
+    position: absolute;
+    left: -200px;
+    top: 150px;
+    transform: scale(1) rotate(-2deg) translateY(0);
+    animation: iconAnimate1 3s infinite;
+  }
+
+  .icon2 {
+    width: 145px;
+    height: auto;
+    position: absolute;
+    right: -200px;
+    top: -100px;
+    transform: scale(1) rotate(-3deg) translateY(0);
+    animation: iconAnimate2 3s infinite;
+  }
+
+  .icon3 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: -280px;
+    top: 30px;
+    transform: scale(1) rotate(-1deg) translateY(0);
+    animation: iconAnimate3 3s infinite;
+  }
+
+  .icon4 {
+    width: 240px;
+    height: auto;
+    position: absolute;
+    left: -290px;
+    top: 80px;
+    transform: scale(1) rotate(-4deg) translateY(0);
+    animation: iconAnimate4 3s infinite;
+  }
+
+  @keyframes iconAnimate1 {
+    0% {
+      transform: scale(1) rotate(-2deg) translateY(0px);
+    }
+    50% {
+      transform: scale(0.9) rotate(-2deg) translateY(30px);
+    }
+    100% {
+      transform: scale(1) rotate(-2deg) translateY(0px);
+    }
+  }
+
+  @keyframes iconAnimate2 {
+    0% {
+      transform: scale(1) rotate(-3deg) translateY(0px);
+    }
+    50% {
+      transform: scale(0.9) rotate(-3deg) translateY(30px);
+    }
+    100% {
+      transform: scale(1) rotate(-3deg) translateY(0px);
+    }
+  }
+
+  @keyframes iconAnimate3 {
+    0% {
+      transform: scale(1) rotate(-1deg) translateY(0px);
+    }
+    50% {
+      transform: scale(0.9) rotate(-1deg) translateY(30px);
+    }
+    100% {
+      transform: scale(1) rotate(-1deg) translateY(0px);
+    }
+  }
+
+  @keyframes iconAnimate4 {
+    0% {
+      transform: scale(1) rotate(-4deg) translateY(0px);
+    }
+    50% {
+      transform: scale(0.9) rotate(-4deg) translateY(30px);
+    }
+    100% {
+      transform: scale(1) rotate(-4deg) translateY(0px);
+    }
   }
 }

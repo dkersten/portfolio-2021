@@ -10,9 +10,9 @@
             <div class="logo-bg"></div>
         </div>
         <div class="nav-menu-container">
-            <button id="menu-toggle" class="menu-toggle">Menu</button>
+            <button for="menu" tabindex="0" id="menu-toggle" class="menu-toggle" aria-expanded="false">Menu</button>
             <ul id="menu" class="hide">
-                <li id="close-mobile-menu"><button>Close Menu</button></li>
+                <li id="close-mobile-menu"><button for="menu">Close Menu</button></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#previous-work">Projects</a></li>
@@ -25,10 +25,16 @@
 <main class="main-content">
     <section class="full-width banner">
         <div class="page-width">
-            <h1>Web Developer & Designer</h1>
-            <p>
-                Hi, I'm Dan! I'm currently focused on front end development, design, and accessibility. I also dabble in back end development.
-            </p>
+            <div class="banner-cta">
+                <h1>Web Developer & Designer</h1>
+                <p>
+                    Hi, I'm Dan! I'm currently focused on front end development, design, and accessibility. I also dabble in back end development.
+                </p>
+                <img class="icon1" src="https://i.imgur.com/063yfGE.png" alt="">
+                <img class="icon2" src="https://imgur.com/l7WflqZ.png" alt="">
+                <img class="icon3" src="https://imgur.com/zJ6PxG5.png" alt="">
+                <img class="icon4" src="https://imgur.com/BPzPfL2.png" alt="">
+            </div>
         </div>
     </section>
     <section id="about" class="full-width about">

@@ -6,11 +6,13 @@ const menuItems = document.querySelectorAll("#menu a")
 openMenu.addEventListener('click', () => {
     menu.classList.add('show')
     menu.classList.remove('hide')
+    openMenu.setAttribute("aria-expanded", true)
 })
 
 closeMenu.addEventListener('click', () => {
     menu.classList.add('hide')
     menu.classList.remove('show')
+    openMenu.setAttribute("aria-expanded", false)
 })
 
 for (let i = 0; i < menuItems.length; i++) {
@@ -19,5 +21,6 @@ for (let i = 0; i < menuItems.length; i++) {
     currentMenuItem.addEventListener('click', () => {
         menu.classList.add('hide')
         menu.classList.remove('show')
+        openMenu.setAttribute("aria-expanded", false)
     })
 }
