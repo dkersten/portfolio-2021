@@ -24,18 +24,7 @@ section.resources {
     margin-top: $vertical-spacing-sm;
 
     a {
-      font-size: $font-size-xs;
-      color: $color-white;
-      background: $color-blue-primary;
-      text-decoration: none;
-      padding: 10px 25px;
-      border-radius: 5px;
-      line-height: 1;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-
-      &:hover {
-        background: $color-blue-secondary;
-      }
+      @include btn-default;
     }
   }
 }

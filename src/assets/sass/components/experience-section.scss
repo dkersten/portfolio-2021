@@ -37,6 +37,14 @@ section.experience {
     }
   }
 
+  .btn-container {
+    margin-top: $vertical-spacing-sm;
+
+    a {
+      @include btn-default;
+    }
+  }
+
   .right {
     p {
       margin-bottom: $vertical-spacing-xs;
@@ -58,6 +66,20 @@ section.experience {
     color: $color-font-secondary;
     font-size: $font-size-xs;
     line-height: 1.7;
+  }
+
+  li {
+    line-height: 2;
+
+    &::before {
+      content: "\f101";
+      font-family: "FontAwesome";
+      float: left;
+      left: -10px;
+      padding-right: 1rem;
+      top: 0px;
+      opacity: 0.5;
+    }
   }
 }
 
