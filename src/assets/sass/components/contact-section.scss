@@ -40,3 +40,9 @@ footer.contact {
     }
   }
 }
+
+@media only screen and (max-width: 475px) {
+  footer.contact {
+    padding-bottom: $vertical-spacing-md;
+  }
+}

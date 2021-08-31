@@ -39,3 +39,11 @@ section.resources {
     }
   }
 }
+
+@media only screen and (max-width: 475px) {
+  section.resources {
+    margin-top: $vertical-spacing-md;
+    margin-bottom: $vertical-spacing-md;
+    padding-bottom: 10px;
+  }
+}

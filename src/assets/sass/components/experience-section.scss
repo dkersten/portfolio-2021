@@ -60,3 +60,9 @@ section.experience {
     line-height: 1.7;
   }
 }
+
+@media only screen and (max-width: 475px) {
+  section.experience {
+    margin-bottom: $vertical-spacing-md;
+  }
+}

@@ -233,4 +233,20 @@
       top: -130px;
     }
   }
+
+  @media only screen and (max-width: 475px) {
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .banner {
+    padding-top: $vertical-spacing-md !important;
+    padding-bottom: $vertical-spacing-md !important;
+  }
 }

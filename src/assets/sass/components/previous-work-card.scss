@@ -35,3 +35,19 @@
     color: $color-font-secondary;
   }
 }
+
+@media only screen and (max-width: 475px) {
+  .carousel-cell {
+    max-width: 325px;
+
+    img {
+      width: 325px;
+      height: 245px;
+    }
+
+    h3,
+    p {
+      max-width: 325px;
+    }
+  }
+}
