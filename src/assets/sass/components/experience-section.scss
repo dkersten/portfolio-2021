@@ -54,9 +54,21 @@ section.experience {
       column-count: 2;
     }
 
-    @media only screen and (min-width: 500px) and (max-width: 767px) {
+    @media only screen and (min-width: 768px) and (max-width: 899px) {
+      ul {
+        column-count: 1;
+      }
+    }
+
+    @media only screen and (min-width: 599px) and (max-width: 767px) {
       ul {
         column-count: 3;
+      }
+    }
+
+    @media only screen and (max-width: 399px) {
+      ul {
+        column-count: 1;
       }
     }
   }
