@@ -40,3 +40,32 @@ p {
     }
   }
 }
+
+.draw {
+}
+
+svg.animate-svg {
+  position: absolute;
+  left: 85px;
+  top: -130px;
+  width: 350px;
+  height: 250px;
+  margin-left: 100px;
+  transform: rotate(-8deg);
+  stroke-width: 1.75;
+  stroke: $color-green-primary;
+  fill: none;
+
+  @media only screen and (max-width: 599px) {
+    top: -200px;
+    left: -60px;
+    transform: rotate(-25deg);
+  }
+
+  @media only screen and (max-width: 475px) {
+    height: 150px;
+    width: 210px;
+    top: -130px;
+    stroke-width: 2.75;
+  }
+}
