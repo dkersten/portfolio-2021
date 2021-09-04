@@ -12,18 +12,3 @@
     background: $color-blue-secondary;
   }
 }
-
-@mixin animateArrowRightToLeft {
-  position: absolute;
-  left: 85px;
-  top: -130px;
-  width: 350px;
-  height: 250px;
-  margin-left: 100px;
-  transform: rotate(-8deg);
-  @media only screen and (max-width: 599px) {
-    top: -200px;
-    left: -60px;
-    transform: rotate(-25deg);
-  }
-}

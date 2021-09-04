@@ -5,11 +5,21 @@ footer.contact {
     text-align: center;
     max-width: 700px;
     margin: auto;
+    position: relative;
+  }
+
+  svg.svg-outline {
+    position: absolute;
+    left: 50%;
+    top: -29px;
+    transform: translateX(-50%);
+    stroke: $color-green-primary;
+    stroke-width: 4;
   }
 
   h2 {
     color: $color-font-primary;
-    margin-bottom: $vertical-spacing-xs;
+    margin-bottom: $vertical-spacing-sm;
     font-weight: 700;
   }
 
