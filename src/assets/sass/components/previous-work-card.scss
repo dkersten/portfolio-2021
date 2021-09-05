@@ -15,6 +15,10 @@
     width: 425px;
     height: 320px;
     box-shadow: $box-shadow-md;
+
+    &:hover {
+      cursor: default;
+    }
   }
 
   h3 {

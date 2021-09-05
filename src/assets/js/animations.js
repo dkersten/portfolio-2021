@@ -21,5 +21,3 @@ new Vivus('contact-outline', {
     duration: 500,
     animTimingFunction: Vivus.LINEAR
 });
-
-//   resources-outline
