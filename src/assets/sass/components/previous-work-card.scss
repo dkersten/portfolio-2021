@@ -37,6 +37,13 @@
     max-width: 425px;
     width: 100%;
     color: $color-font-secondary;
+
+    a,
+    a:hover,
+    a:focus,
+    a:visited {
+      color: $color-font-secondary;
+    }
   }
 }
 
